@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <style>
+        /* Cores do Campo e Estilos Gerais */
+        :root {
+            --verde-principal: #2E5A44;
+            --verde-claro: #A3B899;
+            --terracota: #8B4513;
+            --areia: #F9F6F0;
+            --texto: #2C3E50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--areia);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--verde-principal);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 5px solid var(--terracota);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--verde-principal);
+            border-bottom: 2px solid var(--verde-claro);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Seção do Quiz */
+        .quiz-container {
+            background: #EDF2EE;
+            border-left: 5px solid var(--verde-principal);
+        }
+
+        .question {
+            font-weight: bold;
+            margin-top: 1.5rem;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .options li {
+            margin: 0.5rem 0;
+        }
+
+        label {
+            cursor: pointer;
+            display: block;
+            padding: 0.5rem;
+            background: white;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
+
+        label:hover {
+            background: var(--verde-claro);
+            color: white;
+        }
+
+        button {
+            background-color: var(--terracota);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--verde-principal);
+        }
+
+        #resultado {
+            margin-top: 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--verde-principal);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--verde-principal);
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>O Equilíbrio Essencial entre o Campo e a Cidade</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Dois Mundos, Uma Só Engrenagem</h2>
+            <p>Por muito tempo, o campo e a cidade foram vistos como realidades distantes e isoladas. No entanto, o futuro nos mostra que eles são profundamente interdependentes. A cidade pulsa com tecnologia, inovação e consumo, enquanto o campo sustenta essa vida pulsante através da produção de alimentos, energia limpa e preservação ambiental.</p>
+            <p>O <strong>Agro Forte</strong> não se resume a produzir em larga escala; trata-se de produzir com inteligência. É a tecnologia urbana (como drones, sensores e inteligência artificial) cruzando as fronteiras para criar uma agricultura de precisão que economiza água, reduz defensivos e protege o solo.</p>
+        </section>
+
+        <section>
+            <h2>O Caminho da Sustentabilidade</h2>
+            <p>Alcançar o equilíbrio significa entender que as ações da cidade impactam o campo, e vice-versa. Quando a cidade adota a economia circular e o campo investe em práticas como o plantio direto e a integração lavoura-pecuária-floresta (ILPF), ambos saem ganhando. O resultado é oxigênio mais puro para os centros urbanos e solo mais rico para a produção agrícola.</p>
+        </section>
+
+        <section class="quiz-container">
+            <h2>Teste seu Conhecimento!</h2>
+            <p>Descubra se você realmente entende a conexão entre o campo e a cidade.</p>
+            
+            <form id="quizForm">
+                <div class="question">1. De que forma a tecnologia da cidade mais ajuda o campo a ser sustentável atualmente?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q1" value="A"> Substituindo completamente a mão de obra humana por robôs.</label></li>
+                    <li><label><input type="radio" name="q1" value="B"> Através da agricultura de precisão, que otimiza o uso de água e insumos.</label></li>
+                    <li><label><input type="radio" name="q1" value="C"> Levando asfalto para todas as áreas de plantio.</label></li>
+                </ul>
+
+                <div class="question">2. O que é a Integração Lavoura-Pecuária-Floresta (ILPF)?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q2" value="A"> Uma estratégia que une diferentes atividades na mesma área para recuperar o solo.</label></li>
+                    <li><label><input type="radio" name="q2" value="B"> Um método urbano de construção de prédios verdes.</label></li>
+                    <li><label><input type="radio" name="q2" value="C"> A exportação de toda a produção de madeira para as cidades.</label></li>
+                </ul>
+
+                <div class="question">3. Qual é o papel principal da cidade na sustentabilidade do agro?</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q3" value="A"> Consumir sem critérios e exigir preços baixos a qualquer custo.</label></li>
+                    <li><label><input type="radio" name="q3" value="B"> Financiar pesquisas científicas e consumir de forma consciente e responsável.</label></li>
+                    <li><label><input type="radio" name="q3" value="C"> Produzir seus próprios alimentos em todas as janelas dos prédios.</label></li>
+                </ul>
+
+                <button type="button" onclick="calcularResultado()">Enviar Respostas</button>
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para o Futuro Sustentável</p>
+    </footer>
+
+    <script>
+        function calcularResultado() {
+            // Respostas corretas
+            const respostasCorretas = { q1: "B", q2: "A", q3: "B" };
+            let pontuacao = 0;
+            const form = document.getElementById('quizForm');
+            
+            // Validação das respostas
+            const q1 = form.elements['q1'].value;
+            const q2 = form.elements['q2'].value;
+            const q3 = form.elements['q3'].value;
+
+            if (!q1 || !q2 || !q3) {
+                document.getElementById('resultado').innerHTML = "⚠️ Por favor, responda todas as perguntas antes de enviar!";
+                document.getElementById('resultado').style.color = "#8B4513";
+                return;
+            }
+
+            if (q1 === respostasCorretas.q1) pontuacao++;
+            if (q2 === respostasCorretas.q2) pontuacao++;
+            if (q3 === respostasCorretas.q3) pontuacao++;
+
+            // Exibição do resultado
+            let mensagem = "";
+            if (pontuacao === 3) {
+                mensagem = "🌱 Excelente! Você entende perfeitamente o equilíbrio entre o campo e a cidade. (3/3 acertos)";
+            } else if (pontuacao === 2) {
+                mensagem = "🌿 Muito bom! Você tem uma ótima noção sobre o agro sustentável. (2/3 acertos)";
+            } else {
+                mensagem = "🚜 Vale a pena ler o texto novamente. O campo e a cidade precisam caminhar juntos! (Acertou " + pontuacao + "/3)";
+            }
+
+            const resultadoDiv = document.getElementById('resultado');
+            resultadoDiv.innerHTML = mensagem;
+            resultadoDiv.style.color = "#2E5A44";
+        }
+    </script>
+</body>
+</html>
